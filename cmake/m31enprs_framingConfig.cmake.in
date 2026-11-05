@@ -1,0 +1,9 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/m31enprs_framingTargets.cmake")
+
+# Payload size the installed archive was built with. Informational: the value is
+# already applied to consumers through the target's INTERFACE_COMPILE_DEFINITIONS.
+set(m31enprs_framing_MAX_PAYLOAD_LEN @FRM_MAX_PAYLOAD_LEN@)
+
+check_required_components(m31enprs_framing)
