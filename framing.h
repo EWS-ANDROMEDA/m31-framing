@@ -20,6 +20,7 @@ extern "C" {
 
 #define FRM_IDX_SIGNATURE       0
 #define FRM_IDX_PAYLOAD         (FRM_IDX_SIGNATURE + FRM_SIGNATURE_LEN)
+#define FRM_MAX_PAYLOAD_LEN     4076
 
 #ifndef FRM_MAX_PAYLOAD_LEN
 #error "FRM_MAX_PAYLOAD_LEN must be defined"
